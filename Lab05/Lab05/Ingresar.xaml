@@ -1,0 +1,44 @@
+﻿<Window x:Class="Lab05.Ingresar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab05"
+        mc:Ignorable="d"
+        Title="Ingresar" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="ID Cliente:"/>
+        <TextBox Grid.Row="0" Margin="120,0,0,10" x:Name="txtIdCliente" Width="200"/>
+
+        <Label Grid.Row="1" Content="Nombre Compañía:"/>
+        <TextBox Grid.Row="1" Margin="120,0,0,10" x:Name="txtNombreCompañia" Width="200"/>
+
+        <Label Grid.Row="2" Content="Nombre Contacto:"/>
+        <TextBox Grid.Row="2" Margin="120,0,0,10" x:Name="txtNombreContacto" Width="200"/>
+
+        <Label Grid.Row="3" Content="Cargo Contacto:"/>
+        <TextBox Grid.Row="3" Margin="120,0,0,10" x:Name="txtCargoContacto" Width="200"/>
+
+        <Label Grid.Row="4" Content="Dirección:"/>
+        <TextBox Grid.Row="4" Margin="120,0,0,10" x:Name="txtDireccion" Width="200"/>
+
+        <Label Grid.Row="5" Content="Ciudad:"/>
+        <TextBox Grid.Row="5" Margin="120,0,0,10" x:Name="txtCiudad" Width="200"/>
+
+        <Label Grid.Row="6" Content="Teléfono:"/>
+        <TextBox Grid.Row="6" Margin="120,0,0,10" x:Name="txtTelefono" Width="200"/>
+
+        <Button Grid.Row="7" Content="Guardar Cliente" Width="100" Height="30" HorizontalAlignment="Left" Click="GuardarCliente_Click"/>
+    </Grid>
+</Window>
